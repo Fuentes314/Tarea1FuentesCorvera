@@ -1,3 +1,3 @@
 a= "Micros"
-# comentario sin 2 espacios previos
+#comentario sin espacio posterior
 print(a)

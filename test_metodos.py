@@ -35,15 +35,16 @@ def right_ans_m2(arreglo):
         # y llama a la funcion uno enviandolo el dato del arreglo
 
         if isinstance(arreglo[i], int) and arreglo[i] >= 0:
-        # Comprueba que los elementos del array sean todos enteros positivos
+            # Comprueba que los elementos del array sean enteros positivos
             resultados_metodo_2.append(right_ans_m1(arreglo[i]))
         else:
-        # En caso contrario devuelve un código de error único
+            # En caso contrario devuelve un código de error único
             return "Código de error 3141."
         i += 1
     return resultados_metodo_2
     # Da el array resultados_metodo_2 completo y con las respuestas
     # correctas
+
 
 def test_multiple_op():
     # Función para realizar el test del método 1
@@ -65,6 +66,7 @@ def test_multiple_op():
     # Se comprueba con el assert si la respuesta del elemento seleccionado
     # al azar del array es correcta
 
+
 def test_verify_array_op():
     # función para realizar el test en el array haciendo uso de número random
     wrong_array_array = [[1, "a", 5], [4, 0.2, -5]]
@@ -83,4 +85,3 @@ def test_verify_array_op():
     assert Metodos.verify_array_op(right_elem) == right_ans_m2(right_elem)
     # Se comprueba con el assert si la respuesta del arreglo seleccionado
     # al azar del array es correcta
-    
